@@ -1,0 +1,18 @@
+{
+  "name": "000-Capstone",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon src/index.js"
+  },
+  "dependencies": {
+    "@prisma/client": "^4.14.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-graphql": "^0.12.0",
+    "nodemon": "^2.0.22",
+    "prisma": "^4.14.0"
+  }
+}
