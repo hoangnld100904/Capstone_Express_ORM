@@ -9,6 +9,8 @@ app.use(cors());
 
 app.listen(8080);
 
-// Prisma 
-const { PrismaClient } = require("@prisma/client");
-const prisma = new PrismaClient(); //tương tự initModel của sequelize
+
+
+//Setup Router
+const rootRouter = require("./routers/rootRoute");
+app.use("/api", rootRouter);

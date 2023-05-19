@@ -1,6 +1,7 @@
 const express = require("express");
+const userRouter = require("./userRoute");
 
-const userRouter = express.Router();
+const rootRouter = express.Router();
 
-userRouter.post("/create-user", )
-userRouter.put("/update-user", )
+rootRouter.use("/user", userRouter)
+module.exports = rootRouter
